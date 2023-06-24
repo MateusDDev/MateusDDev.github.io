@@ -1,0 +1,80 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+body {
+  background-color: antiquewhite;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+#color-palette {
+ display: flex;
+ justify-content: center;
+}
+.color {
+ width: 50px;
+ height: 50px;
+ margin: 0px 1px;
+ border: 1px solid black;
+ border-radius: 50%;
+ cursor: pointer;
+}
+.red {
+ background-color: rgb(255, 0, 0);
+ transition: 0.5s;
+}
+.red:hover {
+  background-color: rgb(243, 44, 44);
+}
+.green {
+ background-color: rgb(0, 128, 0);
+ transition: 0.5s;
+}
+.green:hover {
+  background-color: rgb(5, 151, 5);
+}
+.blue {
+ background-color: rgb(0, 0, 255);
+ transition: 0.5s;
+}
+.blue:hover {
+  background-color: rgb(44, 44, 247);
+}
+.purple {
+ background-color: rgb(128, 0, 128);
+ transition: 0.5s;
+}
+.purple:hover{
+  background-color: rgb(153, 6, 153);
+}
+#buttons-container {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.button {
+  cursor: pointer;
+  font-size: 15px;
+  background-color: chocolate;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 7px 15px;
+  transition: 0.5s;
+}
+.button:hover {
+  background-color: rgb(129, 62, 14);
+}
+#pixel-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin: 0 auto;
+  cursor: crosshair;
+}
+.pixel {
+ background-color: white;
+ width: 40px;
+ height: 40px;
+ border: solid 1px black;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <title>Travel Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="title">Formulário Trybe Travel</h1>
+  </header>
+  <main>
+    <form id="main-form" action="">
+      <fieldset>
+        <div class="container-basic-input">
+          <label for="fullName">Nome Completo:</label>
+          <input id="fullName" type="text" minlength="10" maxlength="40" class="basic-input">
+        </div>
+        <div class="container-basic-input">
+          <label for="email">E-mail:</label>
+          <input id="email" type="email" minlength="10" maxlength="50" class="basic-input">
+        </div>
+        <div class="radio-div">
+          <label for="cidade">Cidade</label>
+          <input id="cidade" type="radio" name="destinations" class="form-check-input">
+        </div>
+        <div class="radio-div">
+          <label for="campo">Campo</label>
+          <input id="campo" type="radio" name="destinations" class="form-check-input">
+        </div>
+        <div class="radio-div">
+          <label for="praia">Praia</label>
+          <input id="praia" type="radio" name="destinations" class="form-check-input">
+        </div>
+        <div class="radio-div">
+          <label for="montanha">Montanha</label>
+          <input id="montanha" type="radio" name="destinations" class="form-check-input">
+        </div>       
+        <br>
+        <label for="question">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <br>
+        <textarea name="question" id="question" cols="30" rows="10" minlength="1" maxlength="500"></textarea>
+        <br>
+        <div id="last-container">
+          <div>
+            <label for="date">Qual a melhor data para realizar sua viagem?</label>
+            <br>
+            <input id="date" type="date">
+          </div>
+          <div>
+            <label for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            <br>
+            <input id="promo" type="checkbox" class="form-check-input">
+          </div>
+          <div>
+            <label for="agreement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            <br>
+            <input id="agreement" type="checkbox" class="form-check-input">
+          </div>      
+        </div>
+        <section ></section>
+        <button id="submit-btn" type="submit" class="button">Enviar</button>
+        <button id="clear-btn" type="reset" class="button">Limpar</button>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
